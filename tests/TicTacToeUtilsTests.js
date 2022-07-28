@@ -28,3 +28,4 @@ describe("the function", function () {
   });
 });
 
+console.log("This is a comment");
