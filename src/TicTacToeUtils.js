@@ -67,6 +67,10 @@ class TicTacToeUtils {
   TestEjercicio7_2 = function(){
     console.log("commit1");
   }
+
+  TestForkRepo = function(){
+    console.log("This function comes frome a forked repo");
+  }
 }
 
 module.exports = { TicTacToeUtils }
@@ -76,3 +80,8 @@ var ticTacToeUtils = new TicTacToeUtils();
 console.log(ticTacToeUtils.buildBoard(2));
 console.log(tictactoeConstants);
 console.log(ticTacToeUtils.setupPlayers(["E", "I"]));
+
+console.log("Caleb Espinoza here, adding first line to be merged into the main repo from the forked repo")
+console.log("Caleb Espinoza here, adding second line to be merged into the main repo from the forked repo")
+console.log("Caleb Espinoza here, adding third line to be merged into the main repo from the forked repo")
+console.log("Caleb Espinoza here, adding fourht line to be merged into the main repo from the forked repo")
