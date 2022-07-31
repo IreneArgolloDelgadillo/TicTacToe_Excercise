@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 const tictactoeConstants = require('./constants');
 
 class TicTacToeUtils {
@@ -6,7 +7,7 @@ class TicTacToeUtils {
    * empty cells
    * @private
    */
-  buildBoard = function (boardSize) {
+  buildBoard(boardSize) {
     const data = {
       board: [],
       empty: [],
@@ -24,54 +25,40 @@ class TicTacToeUtils {
     }
 
     return data;
-  };
-
-  TestEjercicio7_1 = function () {
-    console.log('commit1');
-  };
+  }
 
   /**
    * Sets the players array with the types supplied, and markers (x and o)
    * chosen at random
    * @private
    */
-  setupPlayers = function (playerTypes) {
+  setupPlayers(playerTypes) {
     let initialIndex = 0;
     let players = [];
-    if (playerTypes.length == 2) {
+    if (playerTypes.length === 2) {
       initialIndex = Math.round(Math.random());
 
       players = [
         {
-          marker: tictactoeConstants._playerMarks[initialIndex],
+          marker: tictactoeConstants.playerMarks[initialIndex],
           type: playerTypes[0],
         },
         {
-          marker: tictactoeConstants._playerMarks[!initialIndex | 0],
+          marker: tictactoeConstants.playerMarks[!initialIndex || 0],
           type: playerTypes[1],
         },
       ];
     }
     return players;
-  };
+  }
 
   /**
    * Rotates the players. Switches which player is currently active
    * @private
    */
-  rotatePlayers = function (players) {
+  rotatePlayers(players) {
     players.push(players.shift());
-  };
-
-  TestEjercicio7_2 = function () {
-    console.log('commit1');
-  };
+  }
 }
 
 module.exports = { TicTacToeUtils };
-
-const ticTacToeUtils = new TicTacToeUtils();
-
-console.log(ticTacToeUtils.buildBoard(2));
-console.log(tictactoeConstants);
-console.log(ticTacToeUtils.setupPlayers(['E', 'I']));
