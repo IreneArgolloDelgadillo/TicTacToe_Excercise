@@ -1,7 +1,7 @@
 module.exports = {
-  _rl: null,
-  _boardSize: 3,
-  _boardData: {},
-  _playerMarks: ['x', 'o'],
-  _players: [],
+  rl: null,
+  boardSize: 3,
+  boardData: {},
+  playerMarks: ['x', 'o'],
+  players: [],
 };
