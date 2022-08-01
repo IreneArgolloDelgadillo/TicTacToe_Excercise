@@ -2,7 +2,7 @@ var tictactoeUtils = require('../src/TicTacToeUtils');
 
 var assert = require('assert');
 describe("the function", function () {
-  it("works", function () {
+  it("buildBoard", function () {
     var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
     var board = ticTacToeUtils.buildBoard(2);
     var expectedBoard = {
@@ -27,9 +27,8 @@ describe("the function", function () {
   });
 });
 
-var assert = require('assert');
 describe("compare tictactoe board size", function () {
-  it("works", function () {
+  it("buildBoard", function () {
     var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
     var board = ticTacToeUtils.buildBoard(2);
         var expectedBoardSize = 2;
@@ -38,3 +37,22 @@ describe("compare tictactoe board size", function () {
   });
 });
 
+describe("Build Empty Board", function () {
+  it("buildBoard", function () {
+    var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
+    var expectedBoardSize = 0;
+    var board = ticTacToeUtils.buildBoard(expectedBoardSize);
+    let currentBoardSize = board.board.length;
+    assert.equal(expectedBoardSize, currentBoardSize);
+  });
+});
+
+describe("Build three size Board", function () {
+  it("buildBoard", function () {
+    var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
+    var expectedBoardSize = 3;
+    var board = ticTacToeUtils.buildBoard(expectedBoardSize);
+    let currentBoardSize = board.board[0].length;
+    assert.equal(expectedBoardSize, currentBoardSize);
+  });
+});
