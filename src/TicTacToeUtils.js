@@ -1,4 +1,4 @@
-var tictactoeConstants = require('./constants');
+var tictactoeConstants = require('./TicTacToeUtilsConstants');
 
 class TicTacToeUtils {
 
