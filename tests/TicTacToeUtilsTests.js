@@ -28,3 +28,10 @@ describe("the function", function () {
   });
 });
 
+//just test
+const a = 8;
+console.log ("a:", a);
+
+
+
+
