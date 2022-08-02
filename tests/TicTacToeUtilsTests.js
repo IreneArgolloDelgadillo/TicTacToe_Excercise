@@ -1,5 +1,7 @@
 var tictactoeUtils = require('../src/TicTacToeUtils');
 //comment1
+//comment2
+var test = 1;
 var assert = require('assert');
 describe("the function", function () {
   it("works", function () {
@@ -24,9 +26,10 @@ describe("the function", function () {
         ]
         };
     assert.notEqual(board, expectedBoard);
+
   });
 });
-
+//Comment 3
 var assert = require('assert');
 describe("compare tictactoe board size", function () {
   it("works", function () {
