@@ -31,6 +31,10 @@ class TicTacToeUtils {
     console.log("commit1");
   }
 
+  TestEjercicio7_2 = function(){
+    console.log("commit2");
+  }
+
   /**
    * Sets the players array with the types supplied, and markers (x and o)
    * chosen at random
