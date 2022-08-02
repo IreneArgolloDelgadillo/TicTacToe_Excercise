@@ -27,7 +27,6 @@ describe("the function", function () {
   });
 });
 
-var assert = require('assert');
 describe("compare tictactoe board size", function () {
   it("works", function () {
     var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
@@ -38,3 +37,24 @@ describe("compare tictactoe board size", function () {
   });
 });
 
+describe("setup players", function () {
+  it("setupPlayers", function () {
+    const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
+    let currentConfiguration = ticTacToeUtils.setupPlayers(["Rocio", "Pedro"])
+    
+    let containsRocioPlayers = currentConfiguration.find(player => { return player.type === "Rocio"});
+    assert.notEqual(containsRocioPlayers, null);
+
+    let containsPedroPlayers = currentConfiguration.find(player => { return player.type === "Pedro"});
+    assert.notEqual(containsPedroPlayers, null);
+  });
+});
+
+describe("setup more than two players", function () {
+  it("setupPlayers", function () {
+    const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
+    let players = ["Rocio", "Pedro", "Roberto"];
+    let currentConfiguration = ticTacToeUtils.setupPlayers(players)
+    assert.equal(0, currentConfiguration.length);
+  });
+});
