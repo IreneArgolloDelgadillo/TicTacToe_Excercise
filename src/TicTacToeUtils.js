@@ -31,6 +31,10 @@ class TicTacToeUtils {
     console.log("commit1");
   }
 
+  TestEjercicio7_2 = function(){
+    console.log("commit2");
+  }
+
   /**
    * Sets the players array with the types supplied, and markers (x and o)
    * chosen at random
@@ -76,3 +80,5 @@ var ticTacToeUtils = new TicTacToeUtils();
 console.log(ticTacToeUtils.buildBoard(2));
 console.log(tictactoeConstants);
 console.log(ticTacToeUtils.setupPlayers(["E", "I"]));
+
+console.log("Caleb Espinoza here, adding a new line to be merged into the main repo from the forked repo")
