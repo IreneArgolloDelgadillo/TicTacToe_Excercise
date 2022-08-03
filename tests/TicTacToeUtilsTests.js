@@ -1,5 +1,7 @@
 var tictactoeUtils = require('../src/TicTacToeUtils');
-
+//comment1
+//this commit is in order to test lineal changes
+var test = 1;
 var assert = require('assert');
 describe("the function", function () {
   it("works", function () {
@@ -24,6 +26,7 @@ describe("the function", function () {
         ]
         };
     assert.notEqual(board, expectedBoard);
+
   });
 });
 
