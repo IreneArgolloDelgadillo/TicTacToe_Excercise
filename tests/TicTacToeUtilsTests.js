@@ -28,7 +28,11 @@ describe('Board size two', () => {
   });
 });
 
+//<<<<<<< .merge_file_a19272
 //<<<<<<< HEAD
+//=======
+//<<<<<<< HEAD
+//>>>>>>> .merge_file_a22420
 describe('compare tictactoe board size', () => {
   it('works', () => {
     const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
@@ -38,7 +42,11 @@ describe('compare tictactoe board size', () => {
     assert.equal(expectedBoardSize, currentBoardSize);
   });
 });
+//<<<<<<< .merge_file_a19272
 //=======
+//=======
+//=======
+//>>>>>>> .merge_file_a22420
 describe("compare tictactoe board size", function () {
   it("works", function () {
     var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
@@ -49,9 +57,12 @@ describe("compare tictactoe board size", function () {
   });
 });
 
+//<<<<<<< .merge_file_a19272
 //<<<<<<< .merge_file_a06892
 //61one comment//
 //=======
+//=======
+//>>>>>>> .merge_file_a22420
 describe("setup players", function () {
   it("setupPlayers", function () {
     const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
@@ -62,7 +73,10 @@ describe("setup players", function () {
 
     let containsPedroPlayers = currentConfiguration.find(player => { return player.type === "Pedro"});
     assert.notEqual(containsPedroPlayers, null);
+//<<<<<<< .merge_file_a19272
     //Para Ej 8//
+//=======
+//>>>>>>> .merge_file_a22420
   });
 });
 
@@ -74,5 +88,9 @@ describe("setup more than two players", function () {
     assert.equal(0, currentConfiguration.length);
   });
 });
+//<<<<<<< .merge_file_a19272
  feature/setupPlayersUnitTests
  .merge_file_a21176
+//=======
+//>>>>>>> feature/setupPlayersUnitTests
+//>>>>>>> .merge_file_a22420
