@@ -28,7 +28,7 @@ describe("the function", function () {
   });
 });
 
-//just test, modify 1, modify 2
+//just test, modify 1, just modify 2
 const a = 8;
 console.log ("a:", a);
 
