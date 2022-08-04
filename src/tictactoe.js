@@ -312,4 +312,4 @@ var TicTacToe = function(readline) {
 ticTacToe = new TicTacToe(readline)
 ticTacToe.start(['human', 'ai']);
 
-//Second comment for 8//
+//Second comment for 8.2//
