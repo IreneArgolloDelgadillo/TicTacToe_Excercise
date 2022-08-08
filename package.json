@@ -5,7 +5,8 @@
   "main": "tictactoe.js",
   "scripts": {
     "play": "node src/tictactoe.js",
-    "test": "mocha tests/TicTacToeUtilsTests.js"
+    "test": "mocha tests/TicTacToeUtilsTests.js",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://gist.github.com/fdcfdf214cb66d7a1637",
   "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "mocha": "^10.0.0"
   }
 }
