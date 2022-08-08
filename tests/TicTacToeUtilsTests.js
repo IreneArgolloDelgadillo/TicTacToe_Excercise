@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 const assert = require('assert');
 const tictactoeUtils = require('../src/TicTacToeUtils');
 
@@ -8,21 +9,10 @@ describe('Board size two', () => {
     const board = ticTacToeUtils.buildBoard(2);
     const expectedBoard = {
       board: [
-        [
-          null,
-          null,
-        ],
-        [
-          null,
-          null,
-        ],
+        [null, null],
+        [null, null],
       ],
-      empty: [
-        '0 0',
-        '0 1',
-        '1 0',
-        '1 1',
-      ],
+      empty: ['0 0', '0 1', '1 0', '1 1'],
     };
     assert.notEqual(board, expectedBoard);
   });
