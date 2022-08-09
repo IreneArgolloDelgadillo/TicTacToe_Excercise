@@ -84,15 +84,6 @@ describe('setup players', () => {
   });
 });
 
-describe('setup more than two players', () => {
-  it('setupPlayers', () => {
-    const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
-    const players = ['Rocio', 'Pedro', 'Roberto'];
-    const currentConfiguration = ticTacToeUtils.setupPlayers(players);
-    assert.equal(0, currentConfiguration.length);
-  });
-});
-
 describe('Build three size Board', () => {
   it('buildBoard', () => {
     const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
