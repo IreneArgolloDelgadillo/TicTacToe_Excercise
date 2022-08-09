@@ -48,6 +48,7 @@ describe('Build Empty Board', () => {
     assert.equal(expectedBoardSize, currentBoardSize);
   });
 });
+
 describe('setup players', () => {
   it('setupPlayers', () => {
     const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
@@ -69,6 +70,7 @@ describe('setup more than two players', () => {
     assert.equal(0, currentConfiguration.length);
   });
 });
+
 describe('setup players', () => {
   it('setupPlayers', () => {
     const ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
