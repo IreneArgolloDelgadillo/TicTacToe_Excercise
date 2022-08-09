@@ -35,18 +35,20 @@ class TicTacToeUtils {
   setupPlayers(playerTypes) {
     let initialIndex = 0;
     let players = [];
-    initialIndex = Math.round(Math.random());
+    if (playerTypes.length === 2) {
+      initialIndex = Math.round(Math.random());
 
-    players = [
-      {
-        marker: tictactoeConstants.playerMarks[initialIndex],
-        type: playerTypes[0],
-      },
-      {
-        marker: tictactoeConstants.playerMarks[!initialIndex || 0],
-        type: playerTypes[1],
-      },
-    ];
+      players = [
+        {
+          marker: tictactoeConstants.playerMarks[initialIndex],
+          type: playerTypes[0],
+        },
+        {
+          marker: tictactoeConstants.playerMarks[!initialIndex || 0],
+          type: playerTypes[1],
+        },
+      ];
+    }
     return players;
   }
 
