@@ -35,7 +35,6 @@ class TicTacToeUtils {
   setupPlayers(playerTypes) {
     let initialIndex = 0;
     let players = [];
-    if (playerTypes.length === 2) {
       initialIndex = Math.round(Math.random());
 
       players = [
@@ -48,7 +47,6 @@ class TicTacToeUtils {
           type: playerTypes[1],
         },
       ];
-    }
     return players;
   }
 
