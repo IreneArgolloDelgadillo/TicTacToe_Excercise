@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-const tictactoeConstants = require('./constants');
+const tictactoeConstants = require('./TicTacToeUtilsConstants');
 
 class TicTacToeUtils {
   /**
